@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:aqua;">
+    <header">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-primary">
+          <div class="container-fluid">
+            <button
+              data-mdb-collapse-init
+              class="navbar-toggler"
+              type="button"
+              data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+      
+        <!-- Jumbotron -->
+        <div class="p-5 text-center bg-body-tertiary">
+          <h1 class="mb-3 text-white">Heading</h1>
+          <h4 class="mb-3 text-white">Subheading</h4>
+          <a data-mdb-ripple-init class="btn btn-primary text-white" href="" role="button">Call to action</a>
+        </div>
+        <!-- Jumbotron -->
+      </header>
+    <h1 class="text-primary">Hellow {{name}}, we wish you could direct us well and we loves you!!. issubi forever and issubi for life!!!.</h1>
+    <p style="color: black; background:burlywood;">Mwalimu luhondo ni mkombozi wa africa na ni mtu wa upendo na watu, anajali pia matakwa ya kila mtu</p>
+</body>
+</html>
+{% endblock %}
